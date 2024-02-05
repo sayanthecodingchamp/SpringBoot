@@ -1,0 +1,30 @@
+]03:20:06.782 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.s.s.C.UserController:
+%	{GET [/admin/users]}: getAllUsers()
+(	{GET [/users/{id}]}: getUserbyId(UUID)
+$	{POST [/signUp]}: createUser(User)
+2	{PUT [/admin/users/{id}]}: updateUser(UUID,User)
+0	{DELETE [/admin/users/{id}]}: deleteUser(UUID)
+$	{POST [/demoPost]}: demoPost(User)
+	{GET [/demoGet]}: demo()
+	{GET [/about]}: getAbout()
+ 	{GET [/admin/get]}: adminGet()
+"	{GET [/public/get]}: publicGet()
+Ø03:20:06.790 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 10 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+Ú03:20:06.833 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+½03:20:06.854 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+03:20:06.866 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+u03:20:06.866 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+‚03:20:06.867 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+z03:20:06.868 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+¸03:20:06.868 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1e8ab90f
+¯03:20:06.868 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@78d6447a
+é03:20:06.868 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+~03:20:06.868 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 2 ms
+µ{"uId":null,"firstName":"Sushant","lastName":"Singh","email":"singh@gmail.com","password":"singh","phone":"9996789089","address":"Vizag","role":{"rID":null,"roleName":"ROLE_USER"}}
+|03:20:06.917 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - POST "/signUp", parameters={}
+Ò03:20:06.919 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.springboot.suntelglobalinternships.Controller.UserController#createUser(User)
+Ô03:20:06.949 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Read "application/json" to [com.springboot.suntelglobalinternships.Model.User@5922d3e9]
+ä03:20:06.960 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json] and supported [application/json, application/*+json]
+˜03:20:06.960 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Nothing to write: null body
+o03:20:06.961 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
